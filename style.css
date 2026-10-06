@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-around;
+    background-color: #9a4040;
+}
+
+main{
+    background-color: rgb(228, 228, 36);
+}
+footer{
+    background-color: #3db319;
+    text-align: center;
+    padding: 1rem;
+}

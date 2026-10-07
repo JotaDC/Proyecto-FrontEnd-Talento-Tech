@@ -36,11 +36,14 @@
     <!-- Contenido principal -->
     <main>
         <section class="hero">
+            <a name="inicio"></a>
             <h1>Bienvenido a 3D-Print</h1>
             <p>Creamos tus ideas en 3 dimensiones. Diseñamos y fabricamos productos impresos en 3D para tu hogar, negocio, hobby o proyecto.</p>
-            <a href="productos.html" class="boton">Ver Productos</a>
+            <br>
+            <a href="#productos" class="boton">Ver Productos</a>
         </section>
         <section class="productos" id="productos">
+            <a name="productos"></a>
             <h2>Nuestros Productos</h2>
             <div class="grid-productos">
                 
@@ -97,18 +100,28 @@
                     <p>Descripción del producto 8.</p>
                 </div>
             </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <a name="contacto"></a>
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" placeholder="Nombre" required size="50">
+                <label for="">Email</label><input type="email" name="email" placeholder="Correo electrónico" required>
+                <label for="">Mensaje</label><textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
     </main>
 
     <!-- Pie de página -->
     <footer>
-        <div class="contenedor">
-            <p>&copy; 2026 3D-Print. Todos los derechos reservados.</p>
+        <div class="derechos">
+            <p>&copy; 2026 3D-Print Todos los derechos reservados.</p>
         </div>
         <div class="redes-sociales">
             
-            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook </a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twiter </a>
-            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram </a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook </a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i> Twitter </a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram </a>
         </div>
         
     </footer>

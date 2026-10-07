@@ -13,14 +13,14 @@
     --color-texto-claro: #6c6c80;
 
     --color-borde: #e6e6ef;
-
+/*
     --sombra:
         0 10px 30px rgba(30, 30, 60, 0.08);
 
     --radio: 16px;
 
     --contenedor: 1200px;
-
+*/
 }
 
 * {
@@ -34,6 +34,7 @@ body {
     color: var(--color-texto);
     background-color: var(--color-fondo);
     line-height: 1.6;
+    font-size: 1.5rem;
 }
 
 a {
@@ -41,6 +42,10 @@ a {
     color: inherit;
 }
 
+.menu a:hover {
+    color: var(--color-principal-oscuro);
+    font-weight: bold;
+}
 
 header {
     background-color: var(--color-blanco);
@@ -58,9 +63,10 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--color-principal);
+    
 }
 .menu{
     display: flex;
@@ -77,6 +83,7 @@ header {
     color: var(--color-blanco);
     text-align: center;
     padding: 4rem 2rem;
+    /*height: 40vw;*/
 }
 
 .productos {
@@ -86,6 +93,14 @@ header {
     gap: 2rem;
     padding: 2rem;
 }
+.boton {
+   
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 0.5rem 1rem;
+    
+}
+
 .grid-productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -106,16 +121,7 @@ header {
     border-radius: var(--radio);
     margin-bottom: 1rem;
 }
-footer {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: var(--color-blanco);
-    border-top: 1px solid var(--color-borde);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    
-  
-}
+
 
 .redes-sociales {
     display: flex;
@@ -123,4 +129,37 @@ footer {
     gap: 1rem;
    
 }
+section.contacto {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+   
+    padding: 4rem 2rem;
+}
 
+form {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+form input, form textarea, button {
+   
+    padding: 0.5rem;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    font-size: 1.5rem;
+}
+
+footer {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--color-blanco);
+    border-top: 1px solid var(--color-borde);
+   
+    font-size: 1.2rem;
+    background-color: var(--color-principal);
+    padding: 1rem;
+    
+  
+}
